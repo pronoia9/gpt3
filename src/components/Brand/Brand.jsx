@@ -1,5 +1,5 @@
 import './Brand.scss';
 
-export const Brand = () => {
+export default function Brand () {
   return <div>Brand</div>;
 };

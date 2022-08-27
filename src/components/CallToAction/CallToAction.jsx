@@ -1,5 +1,5 @@
 import './CallToAction.scss';
 
-export const CallToAction = () => {
+export default function CallToAction() {
   return <div>CallToAction</div>;
 };

@@ -1,5 +1,5 @@
 import './Feature.scss';
 
-export const Feature = () => {
+export default function Feature() {
   return <div>Feature</div>;
 };

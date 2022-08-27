@@ -1,5 +1,5 @@
 import './Article.scss';
 
-export const Article = () => {
+export default function Article (){
   return <div>Article</div>;
 };
