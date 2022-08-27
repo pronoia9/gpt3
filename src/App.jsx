@@ -1,6 +1,6 @@
-import './App.scss';
 import { Brand, CTA, Navbar } from './components';
 import { Blog, Features, Footer, Header, Possibility, WhatGPT3 } from './containers';
+import './App.scss';
 
 export default function App() {
   return (
