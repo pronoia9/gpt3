@@ -171,6 +171,7 @@ const footer = {
       props: [{ title: 'Crechterwoord K12 182 DK Alknjkcb' }, { title: '085-132567' }, { title: 'info@payme.net' }],
     },
   ],
+  copyright: '© 2021 GPT-3. All rights reserved.',
 };
 
 export { navbar, header, brands, whatGPT3, features, possibility, cta, blog, footer };
