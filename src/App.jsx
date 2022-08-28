@@ -9,7 +9,6 @@ export default function App() {
         <Navbar />
         <Header />
       </div>
-
       <Brand />
       <WhatGPT3 />
       <Features />
