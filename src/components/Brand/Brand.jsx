@@ -1,10 +1,9 @@
 import './Brand.scss';
-import { images } from './imports';
 
-export default function Brand() {
+export default function Brand({ data }) {
   return (
     <div className='gpt3__brand section__padding'>
-      {images.map((brand, i) => (
+      {data.map((brand, i) => (
         <div key={brand}>
           <img src={brand} alt={`brand-${i}`} />
         </div>
