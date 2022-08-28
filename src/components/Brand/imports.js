@@ -4,4 +4,6 @@ import google from '../../assets/google.png';
 import shopify from '../../assets/shopify.png';
 import slack from '../../assets/slack.png';
 
-export { atlassian, dropbox, google, shopify, slack }
+const images = [atlassian, dropbox, google, shopify, slack];
+
+export { images }
