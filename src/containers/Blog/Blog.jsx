@@ -1,3 +1,4 @@
+import { Article } from '../../components';
 import './Blog.scss';
 
 export default function Blog({ data }) {
@@ -9,8 +10,11 @@ export default function Blog({ data }) {
       </div>
 
       <div className='gpt3__blog-container'>
-        <div className='gpt3__blog-container_groupA'></div>
-        <div className='gpt3__blog-container_groupB'></div>
+        {posts.map((post) => (
+          <div className={`gpt3__blog-container_group${post.group}`} key={post.id}>
+            <Article {...post} />
+          </div>
+        ))}
       </div>
     </div>
   );
