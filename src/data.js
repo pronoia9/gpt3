@@ -1,16 +1,25 @@
+// Navbar
+import navbarLogo from './assets/logo.svg';
+// Header
+import headerPeople from './assets/people.png';
+import headerAi from './assets/ai.png';
+// Brands
 import atlassian from './assets/atlassian.png';
 import dropbox from './assets/dropbox.png';
 import google from './assets/google.png';
 import shopify from './assets/shopify.png';
 import slack from './assets/slack.png';
 
-const navbar = [
-  { title: 'Home', url: '#home' },
-  { title: 'What is GPT3?', url: '#wgpt3' },
-  { title: 'Open AI', url: '#possibility' },
-  { title: 'Case Studies', url: '#features' },
-  { title: 'Library', url: '#blog' },
-];
+const navbar = {
+  logo: navbarLogo,
+  links: [
+    { title: 'Home', url: '#home' },
+    { title: 'What is GPT3?', url: '#wgpt3' },
+    { title: 'Open AI', url: '#possibility' },
+    { title: 'Case Studies', url: '#features' },
+    { title: 'Library', url: '#blog' },
+  ],
+};
 
 const header = {
   title: 'Let’s Build Something amazing with GPT-3 OpenAI',
@@ -18,6 +27,7 @@ const header = {
   input: { placeholder: 'Your email address' },
   button: { text: 'Get Started' },
   ps: '1,600 people requested access a visit in last 24 hours',
+  images: { people: headerPeople, ai: headerAi },
 };
 
 const brands = [atlassian, dropbox, google, shopify, slack];
