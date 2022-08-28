@@ -6,6 +6,14 @@ const navbar = [
   { title: 'Library', url: '#blog' },
 ];
 
+const header = {
+  title: 'Let’s Build Something amazing with GPT-3 OpenAI',
+  text: 'Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.',
+  input: { placeholder: 'Your email address' },
+  button: { text: 'Get Started' },
+  ps: '1,600 people requested access a visit in last 24 hours',
+};
+
 const whatGPT3 = {
   feature: {
     title: 'What is GPT-3',
@@ -49,4 +57,4 @@ const features = {
   ],
 };
 
-export { navbar, whatGPT3, features };
+export { navbar, header, whatGPT3, features };
