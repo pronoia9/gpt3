@@ -29,7 +29,9 @@ export default function Footer({ data }) {
         ))}
       </div>
 
-      <div className='gpt3__footer-copyright'>{copyright}</div>
+      <div className='gpt3__footer-copyright'>
+        <p>{copyright}</p>
+      </div>
     </div>
   );
 }
