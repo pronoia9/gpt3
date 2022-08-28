@@ -3,28 +3,17 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.svg';
 import './Navbar.scss';
 
-const MenuLinks = () => (
-  <>
-    <p>
-      <a href='#home'>Home</a>
-    </p>
-    <p>
-      <a href='#wgpt3'>What is GPT3?</a>
-    </p>
-    <p>
-      <a href='#possibility'>Open AI</a>
-    </p>
-    <p>
-      <a href='#features'>Case Studies</a>
-    </p>
-    <p>
-      <a href='#blog'>Library</a>
-    </p>
-  </>
+const UserButton = ({ styleClass }) => (
+  <div className={styleClass}>
+    <p>Sign In</p>
+    <button type='button'>Sign Up</button>
+  </div>
 );
 
-export default function Navbar() {
+export default function Navbar({ data }) {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const menuLinks = data.map((link) => (<p key={link.title}><a href={link.url}>{link.title}</a></p>));
+  const iconProps = { color: '#fff', size: 27, onClick: () => setToggleMenu(!toggleMenu) };
 
   return (
     <div className='gpt3__navbar'>
@@ -32,28 +21,19 @@ export default function Navbar() {
         <div className='gpt3__navbar-links_logo'>
           <img src={logo} alt='logo' />
         </div>
-        <div className='gpt3__navbar-links_container'>
-          <MenuLinks />
-        </div>
+        <div className='gpt3__navbar-links_container'>{menuLinks}</div>
       </div>
 
-      <div className='gpt3__navbar-sign'>
-        <p>Sign In</p>
-        <button type='button'>Sign Up</button>
-      </div>
+      <UserButton styleClass='gpt3__navbar-sign' />
 
       {/* MOBILE MENU */}
       <div className='gpt3__navbar-menu'>
-        {toggleMenu ? (<RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(!toggleMenu)} />
-        ) : (<RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(!toggleMenu)} />)}
+        {toggleMenu ? <RiCloseLine {...iconProps} /> : <RiMenu3Line {...iconProps} />}
         {toggleMenu && (
           <div className='gpt3__navbar-menu_container scale-up-center'>
             <div className='gpt3__navbar-menu_container-links'>
-              <MenuLinks />
-              <div className='gpt3__navbar-menu_container-links-sign'>
-                <p>Sign In</p>
-                <button type='button'>Sign Up</button>
-              </div>
+              {menuLinks}
+              <UserButton styleClass='gpt3__navbar-menu_container-links-sign' />
             </div>
           </div>
         )}
