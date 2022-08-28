@@ -10,11 +10,16 @@ export default function Blog({ data }) {
       </div>
 
       <div className='gpt3__blog-container'>
-        {posts.map((post) => (
-          <div className={`gpt3__blog-container_group${post.group}`} key={post.id}>
-            <Article {...post} />
-          </div>
-        ))}
+        <div className='gpt3__blog-container_groupA'>
+          {posts.filter((p) => p.group === 'A').map((post) => (
+            <Article key={post.id} {...post} />
+          ))}
+        </div>
+        <div className='gpt3__blog-container_groupB'>
+          {posts.filter((p) => p.group === 'B').map((post) => (
+            <Article key={post.id} {...post} />
+          ))}
+        </div>
       </div>
     </div>
   );
