@@ -1,9 +1,7 @@
 import './Header.scss';
-import people from '../../assets/people.png';
-import ai from '../../assets/ai.png';
 
 export default function Header({ data }) {
-  const { title, text, input, button, ps } = data;
+  const { title, text, input, button, ps, images } = data;
   return (
     <div className='gpt3__header section__padding'>
       <div className='gpt3__header-content'>
@@ -16,13 +14,13 @@ export default function Header({ data }) {
         </div>
 
         <div className='gpt3__header-content__people'>
-          <img src={people} alt='people' />
+          <img src={images.people} alt='people' />
           <p>{ps}</p>
         </div>
       </div>
       
       <div className='gpt3__header-image'>
-        <img src={ai} alt='ai' />
+        <img src={images.ai} alt='ai' />
       </div>
     </div>
   );
