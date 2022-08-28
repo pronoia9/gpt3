@@ -1,3 +1,11 @@
+const navbar = [
+  { title: 'Home', url: '#home' },
+  { title: 'What is GPT3?', url: '#wgpt3' },
+  { title: 'Open AI', url: '#possibility' },
+  { title: 'Case Studies', url: '#features' },
+  { title: 'Library', url: '#blog' },
+];
+
 const whatGPT3 = {
   feature: {
     title: 'What is GPT-3',
@@ -41,4 +49,4 @@ const features = {
   ],
 };
 
-export { whatGPT3, features };
+export { navbar, whatGPT3, features };
