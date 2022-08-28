@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/logo.svg';
 import './Navbar.scss';
 
 const UserButton = ({ styleClass }) => (
@@ -11,8 +10,9 @@ const UserButton = ({ styleClass }) => (
 );
 
 export default function Navbar({ data }) {
+  const { links, logo } = data;
   const [toggleMenu, setToggleMenu] = useState(false);
-  const menuLinks = data.map((link) => (<p key={link.title}><a href={link.url}>{link.title}</a></p>));
+  const menuLinks = links.map((link) => (<p key={link.title}><a href={link.url}>{link.title}</a></p>));
   const iconProps = { color: '#fff', size: 27, onClick: () => setToggleMenu(!toggleMenu) };
 
   return (
