@@ -57,4 +57,12 @@ const features = {
   ],
 };
 
-export { navbar, header, whatGPT3, features };
+const possibility = {};
+
+const cta = {}
+
+const blog = {}
+
+const footer = {}
+
+export { navbar, header, whatGPT3, features, possibility, cta, blog, footer };
