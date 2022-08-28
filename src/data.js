@@ -146,6 +146,7 @@ const blog = {
 const footer = {
   title: 'Do you want to step in to the future before others',
   button: { title: 'Request Early Access' },
+  logo: navbarLogo,
   address: 'Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved',
   sections: [
     {
