@@ -1,3 +1,9 @@
+import atlassian from './assets/atlassian.png';
+import dropbox from './assets/dropbox.png';
+import google from './assets/google.png';
+import shopify from './assets/shopify.png';
+import slack from './assets/slack.png';
+
 const navbar = [
   { title: 'Home', url: '#home' },
   { title: 'What is GPT3?', url: '#wgpt3' },
@@ -13,6 +19,8 @@ const header = {
   button: { text: 'Get Started' },
   ps: '1,600 people requested access a visit in last 24 hours',
 };
+
+const brands = [atlassian, dropbox, google, shopify, slack];
 
 const whatGPT3 = {
   feature: {
@@ -59,10 +67,10 @@ const features = {
 
 const possibility = {};
 
-const cta = {}
+const cta = {};
 
-const blog = {}
+const blog = {};
 
-const footer = {}
+const footer = {};
 
-export { navbar, header, whatGPT3, features, possibility, cta, blog, footer };
+export { navbar, header, brands, whatGPT3, features, possibility, cta, blog, footer };
