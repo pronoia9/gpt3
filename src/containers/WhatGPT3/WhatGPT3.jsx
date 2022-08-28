@@ -17,7 +17,7 @@ export default function WhatGPT3({ data }) {
 
       <div className='gpt3__whatgpt3-container'>
         {features.map((feature) => (
-          <Feature key={feature.title} title={feature.title} text={feature.text} />
+          <Feature key={feature.title} {...feature} />
         ))}
       </div>
     </div>
