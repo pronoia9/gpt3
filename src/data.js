@@ -138,6 +138,33 @@ const blog = {
   ],
 };
 
-const footer = {};
+const footer = {
+  title: 'Do you want to step in to the future before others',
+  button: { title: 'Request Early Access' },
+  address: 'Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved',
+  sections: [
+    {
+      title: 'Links',
+      props: [
+        { title: 'Overons', url: '/' },
+        { title: 'Social Media', url: '/' },
+        { title: 'Counters', url: '/' },
+        { title: 'Contact', url: '/' },
+      ],
+    },
+    {
+      title: 'Company',
+      props: [
+        { title: 'Terms & Conditions', url: '/' },
+        { title: 'Privacy Policy', url: '/' },
+        { title: 'Contact', url: '/' },
+      ],
+    },
+    {
+      title: 'Get In Touch',
+      props: [{ title: 'Crechterwoord K12 182 DK Alknjkcb' }, { title: '085-132567' }, { title: 'info@payme.net' }],
+    },
+  ],
+};
 
 export { navbar, header, brands, whatGPT3, features, possibility, cta, blog, footer };
