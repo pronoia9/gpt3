@@ -28,14 +28,33 @@
     }
   }
   .gpt3__features-container__feature-text {
+    flex: 2;
+    max-width: 390px;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px; // or 188%
+    color: var(--color-text);
   }
 }
 
-// .gpt3__features-container__feature {
-//   .gpt3__features-container__feature-title {
-//     h1 {
-//     }
-//   }
-//   .gpt3__features-container__feature-text {
-//   }
-// }
+/**
+ * ----------------------------------------
+ * Responsive
+ * ----------------------------------------
+ */
+@media screen and (max-width: 550px) {
+  .gpt3__features-container__feature {
+    margin: 1rem 0;
+    .gpt3__features-container__feature-title {
+      h1 {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    .gpt3__features-container__feature-text {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
