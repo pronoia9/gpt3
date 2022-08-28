@@ -2,24 +2,22 @@ import './Header.scss';
 import people from '../../assets/people.png';
 import ai from '../../assets/ai.png';
 
-export default function Header() {
+export default function Header({ data }) {
+  const { title, text, input, button, ps } = data;
   return (
     <div className='gpt3__header section__padding'>
       <div className='gpt3__header-content'>
-        <h1 className='gradient__text'>Let’s Build Something amazing with GPT-3 OpenAI</h1>
-        <p>
-          Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence
-          way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
-        </p>
+        <h1 className='gradient__text'>{title}</h1>
+        <p>{text}</p>
 
         <div className='gpt3__header-content__input'>
-          <input className='' type='email' placeholder='Your email address' />
-          <button type='button'>Get Started</button>
+          <input className='' type='email' placeholder={input.placeholder} />
+          <button type='button'>{button.text}</button>
         </div>
 
         <div className='gpt3__header-content__people'>
           <img src={people} alt='people' />
-          <p>1,600 people requested access a visit in last 24 hours</p>
+          <p>{ps}</p>
         </div>
       </div>
       
