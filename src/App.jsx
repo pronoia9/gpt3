@@ -2,7 +2,7 @@ import { Brand, CTA, Navbar } from './components';
 import { Blog, Features, Footer, Header, Possibility, WhatGPT3 } from './containers';
 import './App.scss';
 
-import { navbar, header, whatGPT3, features } from './data';
+import { navbar, header, brands, whatGPT3, features, possibility, cta, blog, footer } from './data';
 
 export default function App() {
   return (
@@ -11,13 +11,13 @@ export default function App() {
         <Navbar data={navbar} />
         <Header data={header} />
       </div>
-      <Brand />
+      <Brand data={brands} />
       <WhatGPT3 data={whatGPT3} />
       <Features data={features} />
-      <Possibility />
-      <CTA />
-      <Blog />
-      <Footer />
+      <Possibility data={possibility} />
+      <CTA data={cta} />
+      <Blog data={blog} />
+      <Footer data={footer} />
     </div>
   );
 }
