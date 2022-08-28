@@ -5,7 +5,7 @@ export default function WhatGPT3({ data }) {
   const { feature, title, text, features } = data;
   
   return (
-    <div id='whgpt3' className='gpt3__whatgpt3 section__margin'>
+    <div id='wgpt3' className='gpt3__whatgpt3 section__margin'>
       <div className='gpt3__whatgpt3-feature'>
         <Feature title={feature.title} text={feature.text} />
       </div>
