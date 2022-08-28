@@ -13,7 +13,7 @@ import slack from './assets/slack.png';
 const navbar = {
   logo: navbarLogo,
   links: [
-    { title: 'Home', url: '#home' },
+    { title: 'Home', url: '/' },
     { title: 'What is GPT3?', url: '#wgpt3' },
     { title: 'Open AI', url: '#possibility' },
     { title: 'Case Studies', url: '#features' },
