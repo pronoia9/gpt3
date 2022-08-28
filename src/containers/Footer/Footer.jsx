@@ -6,10 +6,10 @@ export default function Footer({ data }) {
     <div className='gpt3__footer section__padding'>
       <div className='gpt3__footer-heading'>
         <h1 className='gradient__text'>{title}</h1>
-
-        <div className='gpt3__footer-btn'>
-          <p>{button.title}</p>
-        </div>
+      </div>
+      
+      <div className='gpt3__footer-btn'>
+        <p>{button.title}</p>
       </div>
 
       <div className='gpt3__footer-links'>
