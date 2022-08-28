@@ -106,6 +106,7 @@ const blog = {
       image: blog05,
       date: new Date('Sep 26, 2021'),
       button: { title: 'Read Full Article' },
+      group: 'A'
     },
     {
       id: 4,
@@ -113,6 +114,7 @@ const blog = {
       image: blog04,
       date: new Date('Sep 26, 2021'),
       button: { title: 'Read Full Article' },
+      group: 'B'
     },
     {
       id: 3,
@@ -120,6 +122,7 @@ const blog = {
       image: blog03,
       date: new Date('Sep 26, 2021'),
       button: { title: 'Read Full Article' },
+      group: 'B'
     },
     {
       id: 2,
@@ -127,6 +130,7 @@ const blog = {
       image: blog02,
       date: new Date('Sep 26, 2021'),
       button: { title: 'Read Full Article' },
+      group: 'B'
     },
     {
       id: 1,
@@ -134,6 +138,7 @@ const blog = {
       image: blog01,
       date: new Date('Sep 26, 2021'),
       button: { title: 'Read Full Article' },
+      group: 'B'
     },
   ],
 };
