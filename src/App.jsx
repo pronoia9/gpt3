@@ -2,14 +2,14 @@ import { Brand, CTA, Navbar } from './components';
 import { Blog, Features, Footer, Header, Possibility, WhatGPT3 } from './containers';
 import './App.scss';
 
-import { navbar, whatGPT3, features } from './data';
+import { navbar, header, whatGPT3, features } from './data';
 
 export default function App() {
   return (
     <div className='App'>
       <div className='gradient__bg'>
         <Navbar data={navbar} />
-        <Header />
+        <Header data={header} />
       </div>
       <Brand />
       <WhatGPT3 data={whatGPT3} />
