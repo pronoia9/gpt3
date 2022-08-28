@@ -10,7 +10,7 @@ export default function CTA({ data }) {
         <h3>{title}</h3>
       </div>
       <div className='gpt3__cta-button'>
-        <button type='button'>{button.title}</button>
+        <button type='button'>{button.text}</button>
       </div>
     </div>
   );
