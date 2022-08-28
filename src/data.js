@@ -11,6 +11,12 @@ import shopify from './assets/shopify.png';
 import slack from './assets/slack.png';
 // Possibility
 import possibilityImage from './assets/possibility.png';
+// Blog
+import blog01 from './assets/blog01.png';
+import blog02 from './assets/blog02.png';
+import blog03 from './assets/blog03.png';
+import blog04 from './assets/blog04.png';
+import blog05 from './assets/blog05.png';
 
 const navbar = {
   logo: navbarLogo,
@@ -85,9 +91,52 @@ const possibility = {
   post: 'Request Early Access to Get Started',
 };
 
-const cta = {};
+const cta = {
+  text: 'Request Early Access to Get Started',
+  title: 'Register today & start exploring the endless possiblities.',
+  button: { text: 'Get Started' },
+};
 
-const blog = {};
+const blog = {
+  title: 'A lot is happening, We are blogging about it.',
+  posts: [
+    {
+      id: 5,
+      title: 'GPT-3 and Open  AI is the future. Let us exlore how it is?',
+      image: blog05,
+      date: new Date('Sep 26, 2021'),
+      button: { title: 'Read Full Article' },
+    },
+    {
+      id: 4,
+      title: 'GPT-3 and Open  AI is the future. Let us exlore how it is?',
+      image: blog04,
+      date: new Date('Sep 26, 2021'),
+      button: { title: 'Read Full Article' },
+    },
+    {
+      id: 3,
+      title: 'GPT-3 and Open  AI is the future. Let us exlore how it is?',
+      image: blog03,
+      date: new Date('Sep 26, 2021'),
+      button: { title: 'Read Full Article' },
+    },
+    {
+      id: 2,
+      title: 'GPT-3 and Open  AI is the future. Let us exlore how it is?',
+      image: blog02,
+      date: new Date('Sep 26, 2021'),
+      button: { title: 'Read Full Article' },
+    },
+    {
+      id: 1,
+      title: 'GPT-3 and Open  AI is the future. Let us exlore how it is?',
+      image: blog01,
+      date: new Date('Sep 26, 2021'),
+      button: { title: 'Read Full Article' },
+    },
+  ],
+};
 
 const footer = {};
 
