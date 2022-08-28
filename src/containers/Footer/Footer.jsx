@@ -1,7 +1,7 @@
 import './Footer.scss';
 
 export default function Footer({ data }) {
-  const { title, button, logo, address, sections } = data;
+  const { title, button, logo, address, sections, copyright } = data;
   return (
     <div className='gpt3__footer section__padding'>
       <div className='gpt3__footer-heading'>
@@ -28,6 +28,8 @@ export default function Footer({ data }) {
           </div>
         ))}
       </div>
+
+      <div className='gpt3__footer-copyright'>{copyright}</div>
     </div>
   );
 }
