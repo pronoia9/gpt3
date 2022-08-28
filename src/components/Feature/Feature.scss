@@ -31,10 +31,12 @@
     flex: 2;
     max-width: 390px;
     display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px; // or 188%
-    color: var(--color-text);
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px; // or 188%
+      color: var(--color-text);
+    }
   }
 }
 
@@ -53,8 +55,10 @@
       }
     }
     .gpt3__features-container__feature-text {
-      font-size: 12px;
-      line-height: 20px;
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
     }
   }
 }
