@@ -11,8 +11,8 @@ export default function Features({ data }) {
         <p>{text}</p>
       </div>
       <div className='gpt3__features-container'>
-        {features.map((f) => (
-          <Feature key={f.title} title={f.title} text={f.text} />
+        {features.map((feature) => (
+          <Feature key={feature.title} {...feature} />
         ))}
       </div>
     </div>
