@@ -9,6 +9,8 @@ import dropbox from './assets/dropbox.png';
 import google from './assets/google.png';
 import shopify from './assets/shopify.png';
 import slack from './assets/slack.png';
+// Possibility
+import possibilityImage from './assets/possibility.png';
 
 const navbar = {
   logo: navbarLogo,
@@ -75,7 +77,13 @@ const features = {
   ],
 };
 
-const possibility = {};
+const possibility = {
+  image: possibilityImage,
+  pre: 'Request Early Access to Get Started',
+  title: 'The possibilities are beyond your imagination',
+  text: 'Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.',
+  post: 'Request Early Access to Get Started',
+};
 
 const cta = {};
 
